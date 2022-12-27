@@ -60,77 +60,101 @@
         
         
             <section class="section hero-properties">
-                
+               
                 <div class="container hero">
                     <h1 class="hero-heading"> Ефективні рішення для вашого бізнесу</h1>
                     <button  data-modal-open  type="button" class="hero-button"> Замовити послугу</button>
                 </div>
 
                 <div data-modal class="backdrop is-hidden">
+
+
                                 
                     <div class="modal-field">
-                        <button data-modal-close type="button" class="modal-close"></button>
-                        <p>Залиште свої дані, ми вам передзвонимо</p>
+                        <button data-modal-close type="button" class="modal-close">
+
+                            <svg width="11" height="11" class="close-icon">
+                                <use href="./images/icons.svg#cross"></use>
+                            </svg>
+    
+                        </button>
+
+
+                        <p class="modal-caption">Залиште свої дані, ми вам передзвонимо</p>
+
                         <form class="application-form">
                     
-                            <div class="label-field">
-                                <label class="form-label">
-                                    <span class="label">Ім'я</span> 
-                                    <input 
+                            <div class="label-field">  
+                                                              
+                                <label for="name" class="form-label">Ім'я</label>
+                                <input class="input"
                                     type="text"
                                     name="name"
-                                    placeholder=" Тарас Швайнокарасенко">
-                                </label>
-                                
+                                    id="name">
+                                    <svg width="12" height="12" class="form-icon">
+                                        <use href="./images/icons.svg#shape"></use>
+                                    </svg>                              
+                                                             
                             </div>
                     
                             <div class="label-field">
-                                <label class="form-label">
-                                    <span class="label">Телефон</span>
-                                    <input 
+
+                                <label for="tell" class="form-label"> Телефон </label>
+
+                                    <input class="input"
                                     type="tel"
-                                    name="phone_number"
-                                    placeholder="+38-000-00-00">
-                                </label>
-                                
+                                    name="tell"
+                                    id="tell" class="input">
+
+                                    <svg width="13" height="13" class="form-icon">
+                                        <use href="./images/icons.svg#phone"></use>
+                                    </svg>  
+
                             </div>
                     
                             <div class="label-field">
-                                <label class="form-label">
-                                    <span class="label">Пошта</span>
-                                    <input
+
+                                <label for="email" class="form-label">Пошта</label>
+                                    <input class="input"
                                     type="email"
                                     name="mail"
-                                    placeholder="...@gmail.com">
-                                </label>
+                                    id="email">
+
+                                    <svg width="15" height="12" class="form-icon">
+                                        <use href="./images/icons.svg#mail"></use>
+                                    </svg> 
                                 
                             </div>
                             
-                            <div>
-                                <label class="">
-                                    <span class="label">Коментар</span>
+                            <div class="label-field">                                
+                                
+                                <label for="comment" class="form-label">Коментар</label>
                                     <textarea 
-                                        class=""
-                                        name="feedback" 
+                                        class="comment"
+                                        name="comment" 
+                                        id="comment"
                                         rows="5"
-                                        placeholder="Введіть текст"
-                                        >                    
+                                        placeholder="Введіть текст">                                                  
                                     </textarea>
-                                </label>
-                            </div>
-                    
-                            <div>
-                                <label>
-                                    <input 
+                                </div>
+                            
+                            <div class=""></div>
+                                <label class="checkbox-label">
+                                    <input class="checkbox" 
                                     type="checkbox"
                                     name="argeement">
-                                    Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a> 
+                                    <span class="checkbox-icon"></span>
+                                    <span class="ckeckbox-subscr" >Погоджуюся з розсилкою та приймаю</span><a href="#" class="conditions-link">Умови договору</a> 
                                 </label>
                             </div>
 
-                            <button type="submit">Відправити</button>
+                            <div>
+                                <button type="submit" class="form-button">Відправити</button>
+                            </div>  
 
                         </form>
+                                                                   
+
                     </div>
                                
                 </div>
