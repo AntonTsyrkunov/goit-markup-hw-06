@@ -129,16 +129,11 @@
                             <div class="label-field">                                
                                 
                                 <label for="comment" class="form-label">Коментар</label>
-                                    <textarea 
-                                        class="comment"
-                                        name="comment" 
-                                        id="comment"
-                                        rows="5"
-                                        placeholder="Введіть текст">                                                  
-                                    </textarea>
-                                </div>
+                                <textarea class="comment" name="comment" id="comment" rows="5" placeholder="Введіть текст"></textarea>
+
+                            </div>
                             
-                            <div class=""></div>
+                            <div class="checkbox-area">
                                 <label class="checkbox-label">
                                     <input class="checkbox" 
                                     type="checkbox"
@@ -148,9 +143,8 @@
                                 </label>
                             </div>
 
-                            <div>
-                                <button type="submit" class="form-button">Відправити</button>
-                            </div>  
+                            <button type="submit" class="form-button">Відправити</button>
+                         
 
                         </form>
                                                                    
@@ -547,10 +541,30 @@
                     
                 </ul>                 
 
+            </div>   
+            
+            <div class="footer-mailing">
+
+                <form class="footer-mailing__footer-form">
+    
+                    <label>
+                        <span class="footer-mailing__footer-form__caption">Підпишіться на розсилку</span>
+                        <input type="text" name="mailing" placeholder="E-mail" class="footer-mailing__footer-form__input">
+                    </label>
+    
+                    <button type="submit" class="footer-mailing__footer-form__button">Підписатися
+                        <svg width="24px" height="24px" class="footer-mailing__footer-form__button__telega">
+                            <use href="./images/icons.svg#telega"></use>
+                        </svg>
+                    </button>
+                </form>
+    
             </div>
     
-    
         </div>
+
+        
+
     </footer>
 
 
