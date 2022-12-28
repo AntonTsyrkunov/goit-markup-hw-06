@@ -325,6 +325,41 @@ header {
     padding-left: 0;
 }
 
+.examples-box__item{
+    position: relative;
+}
+
+.examples-box__item__examples-box__pic {
+    display: block;   
+}
+
+.examples-box__item__examples-box_overlay {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 76.2%;
+    left: 0;
+    
+}
+
+.examples-box__item__examples-box_overlay__overlay__text{
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-body-color); 
+
+}
+
 .examples-box li + li{
     margin-left:30px;
 }
